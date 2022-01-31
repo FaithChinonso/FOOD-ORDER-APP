@@ -5,25 +5,25 @@ import MealItem from "../MealItem";
 const DUMMY_MEALS = [
   {
     id: "m1",
-    name: "sushi",
-    description: "Finest fish and veggies",
+    name: "Banga Stew",
+    description: "Finest palm kennel sauce",
     price: 22.99,
   },
   {
     id: "m2",
-    name: "Schnitzel",
-    description: "A german specialty!",
+    name: "Oha Soup",
+    description: "A traditional igbo soup!",
     price: 16.5,
   },
   {
     id: "m3",
-    name: "Barbecue Burger",
-    description: "American, raw, meaty",
+    name: "Fisherman Soup",
+    description: "The ultimate seafood goodness",
     price: 12.99,
   },
   {
     id: "m4",
-    name: "Green Bowl",
+    name: "Garden Egg Sauce",
     description: "Healthy...and green...",
     price: 18.99,
   },
@@ -34,7 +34,7 @@ const AvailableMeals = () => {
     <MealItem
       id={meal.id}
       key={meal.id}
-      title={meal.name}
+      name={meal.name}
       description={meal.description}
       price={meal.price}
     />
